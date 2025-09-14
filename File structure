@@ -1,0 +1,46 @@
+movie-review-platform/
+├─ backend/
+│  ├─ package.json
+│  ├─ .env
+│  ├─ src/
+│  │  ├─ index.js                # Express app + server start
+│  │  ├─ app.js                  # Express app, middleware
+│  │  ├─ config/
+│  │  │  └─ db.js
+│  │  ├─ models/
+│  │  │  ├─ User.js
+│  │  │  ├─ Movie.js
+│  │  │  ├─ Review.js
+│  │  │  └─ Watchlist.js
+│  │  ├─ routes/
+│  │  │  ├─ auth.js
+│  │  │  ├─ movies.js
+│  │  │  └─ users.js
+│  │  ├─ controllers/
+│  │  ├─ middlewares/
+│  │  │  ├─ auth.js
+│  │  │  └─ errorHandler.js
+│  │  └─ utils/
+│  └─ README.md
+├─ frontend/
+│  ├─ package.json
+│  ├─ vite.config.js
+│  ├─ .env
+│  ├─ src/
+│  │  ├─ main.jsx
+│  │  ├─ App.jsx
+│  │  ├─ index.css
+│  │  ├─ services/api.js        # axios instance
+│  │  ├─ contexts/AuthContext.jsx
+│  │  ├─ pages/
+│  │  │  ├─ Home.jsx
+│  │  │  ├─ MoviesList.jsx
+│  │  │  ├─ MovieDetail.jsx
+│  │  │  ├─ Profile.jsx
+│  │  │  └─ Login.jsx/Register.jsx
+│  │  └─ components/
+│  │     ├─ MovieCard.jsx
+│  │     ├─ ReviewForm.jsx
+│  │     ├─ SearchFilters.jsx
+│  │     └─ Pagination.jsx
+└─ README.md (root)
